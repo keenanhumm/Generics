@@ -36,7 +36,7 @@ public class Team<T extends Player> implements Comparable<Team<T>>{
 
     public int numPlayers() {
         return this.members.size();
-}
+    }
 
     public void matchResult(Team<T> opponent, int ourScore, int opponentScore) {
         String message;

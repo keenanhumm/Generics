@@ -1,6 +1,7 @@
 package com.kaytec;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -37,7 +38,7 @@ public class Main {
         hawthorn.matchResult(crows, 3, 8);
 
         crows.matchResult(fremantle, 2,1);
-//        crows.matchResult(baseballTeam, 1,1);
+//        crows.matchResult(baseballTeam, 1,1); // won't work, types differ
 
         ArrayList<Team> teams = new ArrayList<>();
         teams.add(hawthorn);
@@ -49,6 +50,8 @@ public class Main {
 
         printRankings(teams);
 
+        // compare
+        System.out.println(hawthorn.compareTo(crows));
 
     }
 }
